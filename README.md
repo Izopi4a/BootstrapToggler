@@ -30,7 +30,11 @@ toggle bootstrap buttons
 $(document).ready(function(){
 
   $('.bsTogglerButtons').toggleButtons({
-      url: "_AJAX_URL_"
+      url: "_AJAX_URL_",
+      aditionalData: {
+        company_id: 11,
+        is_it_raining: false
+      }
   });
 });
 ```
