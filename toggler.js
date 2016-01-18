@@ -32,6 +32,7 @@
                     1: true,
                     2: false
                 },
+                aditionalData: {}
             }, toggler.defaultOptions);
 
             this.initOptions(options);
@@ -92,14 +93,15 @@
 
             callAjax: function(val, label){
 
-                var me = this;
+                var me = this,
+                    formData = $.extend({
+                        pk: this.pk,
+                        status: this.options.status[val]
+                    }, this.options.aditionalData);
 
                 me.$buttons.addClass("disabled");
 
-                $.get(this.options.url, {
-                    pk: this.pk,
-                    status: this.options.status[val]
-                }).done(function(e) {
+                $.get(this.options.url, formData).done(function(e) {
 
                     me.toggleButtonClasses(me.options.status[val], label);
 
