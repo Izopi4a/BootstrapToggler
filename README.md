@@ -30,7 +30,7 @@ toggle bootstrap buttons
 $(document).ready(function(){
 
   $('.bsTogglerButtons').toggleButtons({
-      url: "/api/my_vehicle/toggleDanukStatus"
+      url: "_AJAX_URL_"
   });
 });
 ```
