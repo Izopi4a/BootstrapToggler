@@ -30,8 +30,8 @@ toggle bootstrap buttons
 $(document).ready(function(){
 
   $('.bsTogglerButtons').toggleButtons({
-      url: "_AJAX_URL_",
-      aditionalData: {
+      url: "_AJAX_URL_", // required
+      aditionalData: { //optional
         company_id: 11,
         is_it_raining: false
       }
