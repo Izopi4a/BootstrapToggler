@@ -1,0 +1,21 @@
+{
+  "name": "BootstrapToggler",
+  "homepage": "https://github.com/Izopi4a/BootstrapToggler",
+  "authors": [
+    "Izo Kotzev <izopi4a@gmail.com>"
+  ],
+  "description": "toggle bootstrap buttons",
+  "main": "toggler.js",
+  "moduleType": [],
+  "keywords": [
+    "toggle"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
